@@ -1,0 +1,95 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 605px;
+  padding: 0 20px;
+  background: linear-gradient(90.71deg, rgba(255, 255, 255, 0.06) 72.61%, rgba(255, 255, 255, 0) 99.4%);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out;
+
+  & span {
+    user-select: none;
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    text-align: start;
+    @media screen and (max-width: 1200px) {
+      & {
+        font-size: calc(15px + (21 - 15) * ((100vw - 320px) / (1200 - 320)));
+      }
+    }
+  }
+
+  &:hover {
+    background: linear-gradient(90.71deg, rgba(255, 255, 255, 0.2) 72.61%, rgba(255, 255, 255, 0) 99.4%);
+  }
+
+  &.active span {
+    color: $orange;
+  }
+
+
+  &.item--big {
+    background: linear-gradient(90.45deg, rgba(255, 255, 255, 0.06) 14.23%, rgba(255, 255, 255, 0) 99.62%);
+    padding: 0 30px;
+    max-width: 495px;
+    transition: background-color 0.5s ease-in-out;
+    text-align: start;
+
+    & span {
+      font-size: 24px;
+      font-weight: 600;
+      @media screen and (max-width: 1200px) {
+        & {
+          font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1200 - 320)));
+        }
+      }
+    }
+
+    &.item--big:hover {
+      background: linear-gradient(90.45deg, rgba(255, 255, 255, 0.2) 14.23%, rgba(255, 255, 255, 0) 99.62%);
+    }
+  }
+
+  &.item--level {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto!important;
+    padding: 0 15px;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    @media screen and (max-width: 426px) {
+      & {
+        max-width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
+    &.active span.label {
+      color: #000;
+    }
+
+    & span {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 2px;
+      text-align: start;
+      }
+
+    & span.label {
+      margin: 0 auto;
+    }
+  }
+
+  & span.label {
+    font-size: 11px;
+  }
+}

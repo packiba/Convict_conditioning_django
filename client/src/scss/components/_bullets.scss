@@ -1,0 +1,20 @@
+.bullets {
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 18px;
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #9496A8;
+
+  }
+
+  .active-dot {
+    background: $orange;
+  }
+}
+

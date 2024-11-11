@@ -1,0 +1,31 @@
+# Питон
+__pycache__/
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+
+
+node_modules/
+
+# База данных
+db.sqlite3
+*.sqlite3
+
+# Логи
+*.log
+
+# Статические файлы
+/static/
+/media/
+
+# Файлы конфигурации
+*.env
+settings_local.py
+
+# Пакеты
+*.egg-info/
+dist/
+build/
+

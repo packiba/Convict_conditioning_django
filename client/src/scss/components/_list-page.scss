@@ -1,0 +1,39 @@
+.listpage-header {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+
+.listpage-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 70px;
+  & .label {
+    display: block;
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    user-select: none
+  }
+}
+
+.listpage-categories {
+  flex-grow: 1;
+  margin-bottom: 50px;
+
+  & .item--big {
+    margin-bottom: 12px;
+  }
+}
+
+.listpage-exercises {
+  flex-grow: 1;
+  margin-bottom: 50px;
+
+
+  & .item {
+    margin-bottom: 10px;
+  }
+}
+

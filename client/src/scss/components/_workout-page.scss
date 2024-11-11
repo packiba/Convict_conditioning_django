@@ -1,0 +1,239 @@
+.workout-row {
+  display: flex;
+  padding-top: 33px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.workout-left {
+
+  & .center {
+    margin: 0 auto;
+  }
+
+  & .animation {
+    margin-top: 37px;
+    margin-bottom: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(8.23deg, #48526A 1.72%, rgba(93, 112, 132, 0) 90.92%);
+    border-radius: 42px;
+    max-width: 322px;
+
+    & img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+}
+
+.workout-right {
+  flex-grow: 1;
+  margin-left: 75px;
+}
+
+
+.exercise-title {
+  //display: flex;
+  //flex-direction: column;
+  margin-bottom: 58px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 680px;
+
+
+  & .exercise-title--category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 585px;
+    padding: 0px 20px 13px;
+    background: linear-gradient(90.71deg, rgba(255, 255, 255, 0.06) 72.61%, rgba(255, 255, 255, 0) 99.4%);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 8px;
+
+    & span {
+      font-size: 18px;
+      font-weight: 400;
+      user-select: none;
+      @media screen and (max-width: 1200px) {
+        & {
+          font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1200 - 320)));
+        }
+      }
+
+      &.label {
+        margin-top: 10px;
+        font-size: 11px;
+        font-weight: 300;
+      }
+    }
+  }
+
+
+  & .exercise-title--name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 605px;
+    background: linear-gradient(90.71deg, rgba(255, 255, 255, 0.06) 72.61%, rgba(255, 255, 255, 0) 99.4%);
+    border-radius: 7px;
+    padding: 0px 20px 13px;
+    border: none;
+
+    & span {
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: -0.05em;
+      user-select: none;
+      @media screen and (max-width: 1200px) {
+        & {
+          font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1200 - 320)));
+        }
+      }
+
+      &.label {
+        margin-top: 10px;
+        font-size: 11px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+
+.exercise-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.exercise-levels {
+  margin-bottom: 50px;
+
+  & .label {
+    user-select: none;
+    font-size: 11px;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+
+  & .label-levels {
+    @media screen and (max-width: 426px) {
+      & {
+        margin-left: 25%;
+      }
+    }
+  }
+}
+
+.level-description {
+  width: 178px;
+  flex-grow: 1;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  & span {
+    max-width: 165px;
+    margin: 0 auto;
+  }
+}
+
+.level-reps {
+  display: flex;
+  justify-content: center;
+  width: 162px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  & .exercise-reps {
+    width: 35px;
+    height: 35px;
+    border: 1px solid  #000;
+    background: transparent;
+    border-radius: 50%;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 35px;
+    text-align: center;
+    transition: ease 0.5s;
+    margin-right: 7px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.done {
+      border: 1px solid  $orange;
+      color: $orange;
+    }
+
+    &.active {
+      background: $orange;
+      border: 1px solid  $orange;
+    }
+  }
+}
+
+.exercise-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5% 50px;
+
+  & .label {
+    display: block;
+    font-size: 11px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 245px;
+    margin-bottom: 12px;
+    user-select: none
+  }
+}
+
+.reps-setup {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.reps-current {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background-color: $orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  margin-bottom: 14px;
+}
+
+
+.reps-current span {
+  font-weight: 800;
+  font-size: 40px;
+  user-select: none;
+}
+
+.timer {
+  justify-content: center;
+}
+
+.workout-descript {
+  padding-bottom: 40px;
+  user-select: none;
+
+  & p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-indent: 30px;
+    text-align: justify;
+  }
+}

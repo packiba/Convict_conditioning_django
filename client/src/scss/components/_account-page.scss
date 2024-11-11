@@ -1,0 +1,90 @@
+.account-header {
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  margin-top: -30px;
+  padding-bottom: 70px;
+
+  &-logo.logo {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  & h1 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  & button {
+    margin-top: 130px;
+  }
+}
+
+.logs {
+  margin-top: 20px;
+  width: 80%;
+
+  &__empty {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+.log {
+  margin-bottom: 20px;
+
+  & span {
+    font-size: 16px;
+    @media screen and (max-width: 1200px) {
+      & {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+      }
+    }
+  }
+
+
+
+  p {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    color: orange;
+    letter-spacing: 1px;
+  }
+
+  li {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90.71deg, rgba(255, 255, 255, 0.06) 72.61%, rgba(255, 255, 255, 0) 99.4%);
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+
+  &__exercise {
+    margin-right: 20px;
+    flex-basis: 350px;
+    font-weight: 600;
+  }
+
+  &__level {
+    margin-right: 20px;
+    flex-basis: 195px;
+  }
+
+  &__sets {
+    flex-basis: 100px;
+    font-weight: 900;
+
+  }
+}
+

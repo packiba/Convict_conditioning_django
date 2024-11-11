@@ -1,0 +1,101 @@
+.button {
+  display: inline-block;
+  padding: 0 25px;
+  background-color: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(30px);
+  border: 1px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  & span {
+    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 600;
+
+    @media screen and (max-width: 1200px) {
+      & {
+        font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1200 - 320)));
+      }
+    }
+  }
+
+  &.button-start {
+    border-radius: 50px;
+    padding: 0 44px;
+
+    & span {
+    font-weight: 600;
+    font-size: 18px;
+    max-width: 240px;
+    @media screen and (max-width: 1200px) {
+      & {
+        font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1200 - 320)));
+      }
+    }
+    }
+  }
+
+  &.button-start:hover {
+    background-color: $orange;
+    border: 1px solid transparent;
+  }
+}
+
+button.button--circle {
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  border: 1px solid $orange;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 55px;
+  color: $orange;
+  line-height: 58px;
+  cursor: pointer;
+  transition: ease 0.5s;
+
+  &:hover {
+    background-color: $orange;
+  }
+
+  &:hover span {
+    color: #000;
+  }
+
+  & span {
+    transition: ease 0.5s;
+    display: block;
+    font-weight: 400;
+    font-size: 55px;
+    color: $orange;
+
+    &.minus {
+      margin-top: -7px;
+    }
+  }
+}
+
+button.button--orange {
+  border: 1px solid $orange;
+  transition: ease 0.5s;
+
+  & span {
+    color: $orange;
+    transition: ease 0.5s;
+
+  }
+
+  &:hover {
+    background-color: $orange;
+  }
+
+  &:hover span {
+    color: #000;
+  }
+}
