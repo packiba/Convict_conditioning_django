@@ -17,6 +17,7 @@ db.sqlite3
 *.log
 
 # Статические файлы
+!/static/react/
 /static/
 /media/
 
@@ -28,5 +29,6 @@ settings_local.py
 *.egg-info/
 dist/
 build/
+
 
 
