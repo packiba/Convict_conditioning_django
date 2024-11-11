@@ -1,1 +1,1 @@
-web: gunicorn convict_conditioning.wsgi --log-file -
+web gunicorn convict_conditioning.wsgi --log-file -
