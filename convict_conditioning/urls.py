@@ -8,5 +8,4 @@ urlpatterns = [
     path('api/exercises/', include('exercises.urls')),
     path('api/journal/', include('workout_logs.urls')),
     path('api/auth/', include('users.urls')),
-    path('', TemplateView.as_view(template_name="react/index.html")),
 ]
