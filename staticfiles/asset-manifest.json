@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.99b391fe.css",
+    "main.js": "/static/js/main.ba2accc6.js",
+    "static/media/count_down_321.wav": "/static/media/count_down_321.1028919d415694879d1f.wav",
+    "static/media/background.png": "/static/media/background.9a8d25deec4c490cd79a.png",
+    "static/media/spinner.gif": "/static/media/spinner.363bfbc5bf1e9512880e.gif",
+    "static/media/Sound_tic.mp3": "/static/media/Sound_tic.0776a04d0eb69858ac16.mp3",
+    "index.html": "/index.html",
+    "main.99b391fe.css.map": "/static/css/main.99b391fe.css.map",
+    "main.ba2accc6.js.map": "/static/js/main.ba2accc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99b391fe.css",
+    "static/js/main.ba2accc6.js"
+  ]
+}
