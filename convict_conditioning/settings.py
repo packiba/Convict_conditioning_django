@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['conv-cond-app.herokuapp.com']
+ALLOWED_HOSTS = ['https://conv-cond-app-77f412523fec.herokuapp.com/']
 
 # Application definition
 
